@@ -154,7 +154,7 @@ class DatabaseSynchronizer:
     def _sync_table_structure(self, test_conn, prod_conn, table_name: str):
         """
         Comparing the table structure in test and prod db. Adding missing columns,
-        changing the column type if necessary (if it is safe).
+        changing the column type if necessary (if it is safe)
         """
         test_columns = self._get_table_columns(test_conn, table_name)
         prod_columns = self._get_table_columns(prod_conn, table_name)

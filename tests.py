@@ -25,7 +25,7 @@ class TestDatabaseSynchronizer(unittest.TestCase):
     def test_sync_schema(self, mock_connect):
         """
         Check that _sync_table_structure is called correctly when calling sync_schema
-        for some_ref_table table in the test db.
+        for some_ref_table table in the test db
         """
         self.logger.debug("Starting test_sync_schema")
         mock_test_conn = MagicMock()
